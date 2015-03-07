@@ -21,7 +21,7 @@ On Friday, March 6th, [@rvagg](https://github.com/rvagg) released io.js [**v1.5.
 * **TC**: Colin Ihrig (@cjihrig) resigned from the TC due to his desire to do more code and fewer meetings.
 -->
 <ul>
-<li><strong>buffer</strong>: <code>Array#indefOf()</code> からモデル化した <code>Buffer#indefOf()</code> メソッドが追加されました。これは String と Buffer と Number を受け入れます。文字列は UTF8 として解釈されます。(Trevor Norris) <a href="https://github.com/iojs/io.js/pull/561">#561</a></li>
+<li><strong>buffer</strong>: <code>Array#indexOf()</code> からモデル化した <code>Buffer#indexOf()</code> メソッドが追加されました。これは String と Buffer と Number を受け入れます。文字列は UTF8 として解釈されます。(Trevor Norris) <a href="https://github.com/iojs/io.js/pull/561">#561</a></li>
 <li><strong>fs</strong>: <code>&#39;fs&#39;</code> のメソッドの <code>options</code> オブジェクトのプロパティは、<code>hasOwnProperty()</code> によるチェックすることはなくなりました。これにより、 <code>options</code> オブジェクトのプロトタイププロパティが適用されることを可能にしました。(Jonathan Ong) <a href="https://github.com/iojs/io.js/pull/635">#635</a></li>
 <li><strong>tls</strong>: TLS のメモリリークのようなものが PayPal によって報告されました。最近変更された <strong>stream_wrap</strong> にこの原因が見られます。最初の修正は <a href="https://github.com/iojs/io.js/pull/1078">#1078</a> ですが、<a href="https://github.com/iojs/io.js/issues/1075">#1075</a> にて現在も修正中です。(Fedor Indutny)</li>
 <li><strong>npm</strong>: npm のバージョンを 2.7.0 にアップグレードしました。semver-major にされている可能性が semver-minor である理由など、詳細については <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26">npm CHANGELOG.md</a> を参照してください。</li>
